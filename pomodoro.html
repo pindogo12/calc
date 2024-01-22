@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+/* General */
+
+body {
+  font-family: serif;
+ // background-color: #7D1D1D;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+button:active {
+  background-color: #ffffff;
+  border: none;
+  width: 35px;
+  height: 27px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+}
+
+button:focus {
+  translate: 0.2em 0.2em;
+  box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+  -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44) inset;
+}
+
+/* Clock Body */
+
+.clock-container {
+  background-color: #7d1d3f; 
+  width: 342px;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 2px 2px sienna;
+}
+
+/* Display + Stop/Start/Reset Controls */
+
+#time-left {
+  font-size: 62px;
+  text-align: center;
+  background-color: #4f0b0b;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+}
+
+#display-controls {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#timer-label {
+  font-size: 17px;
+  text-align: center;
+  padding-top: 2px;
+  background-color: #b00e0e;
+  border-radius: 10px;
+  height: 32px;
+  flex: 2;
+  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+}
+
+#timer-ssr {
+  flex: 1;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-start: end;
+}
+
+/* Timer Length Controls */
+
+.length-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inc-dec-btn-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 140px;
+  height:60px;
+}
+
+.break-container, 
+.session-container {
+  text-align: center;
+/*   display: inline-block; */
+  border: 2px solid rgb(234,178,156);
+  padding: 2px;
+  border-radius: 2px;
+  width: 48%;
+}
+
+.timer-length {
+  font-size: 2em;
+}
+
+.break-container,
+.inc-arrow {
+  margin-right: 12px;
+}
